@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Mario, Peach, Bowser</title> <!-- DON'T FORGET THE TITLE -->
+    </head>
+    <body>
+        <div class="game-container">
+            <h1>Mario, Peach, Bowser</h1>
+            <div class="button-container">
+                <div id="rock" class="option">
+                    <img src="assets/rock.png"alt="c"style="width:180px;height:220px;" /><br />
+                    <span class="label">Mario</span>
+                </div>
+                <div id="paper" class="option">
+                    <img src="assets/paper.png"alt="a"style="width:180px;height:220px;" /><br />
+                    <span class="label">Peach</span>
+                </div>
+                <div id="scissors" class="option">
+                    <img src="assets/scissor.png" alt="b"style="width:180px;height:220px;"><br />
+                    <span class="label">Bowser</span>
+                </div>
+            </div>
+            
+                <div class="button-container">
+                <div id="rock" class="option">
+                    <img src="assets/marioC.jpg"alt="c"style="width:180px;height:220px;" /><br />
+                    <span class="label">Mario</span>
+                </div>
+                <div id="paper" class="option">
+                    <img src="assets/peachC.jpg"alt="a"style="width:180px;height:220px;" /><br />
+                    <span class="label">Peach</span>
+                </div>
+                <div id="scissors" class="option">
+                    <img src="assets/bowserC.jpg" alt="b"style="width:180px;height:220px;"><br />
+                    <span class="label">Bowser</span>
+                </div>
+            </div>
+            
+            
+            <div class="winnings">
+                <div class="result winBox">
+                    <h2>Results</h2>
+                    <div class="pickContainer">
+                        <span class="pickText">You: </span><span id="userPick"></span>
+                    </div>
+                    <div class="pickContainer">
+                        <span class="pickText">Computer: </span><span id="compPick"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="resultContainer">
+                        <span id="overallResult">Click for a result!</span>
+                    </div>
+                </div>
+                <div class="scores winBox">
+                    <h2>Score</h2>
+                    <div class="userScore score-box">
+                        User Score is now: <span id="userScore">0</span>
+                    </div>
+                    <div class="compScore score-box">
+                        Computer Score is now: <span id="compScore">0</span>
+                                    <a href="end.html"><center><img src="assets/button.png" alt="icon" style="width:140px;height:130px;"> </center></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+
+</html>
